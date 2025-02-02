@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="logo">
+        <i class="fa-solid fa-record-vinyl"></i>
+        <p>Music</p>
+    </div>
+    <div class="burger"><i class="fa-solid fa-bars"></i></div>
+    <div class="left">
+        <!-- <div class="logo">
+            <i class="fa-solid fa-record-vinyl"></i>
+            <p>Music</p>
+        </div> -->
+        <div class="left_menu">
+            <ul>
+                <li>
+                    <div class="items">
+                        <i class="fa-solid fa-house"></i>
+                        <h3><a href="">Home</a></h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="items">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3><a href="#quickpicks">Quick Picks</a></h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="header">
+        <i class="fa-solid fa-arrow-left"></i>
+    </div> -->
+    <div class="right">
+        <!-- <div class="header">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div> -->
+        <div id="h1">
+            <h1>Albums for you</h1>
+        </div>
+        <div class="albums">
+            <div class="album_grid"></div>
+        </div>
+        <div class="separator"></div>
+        <div class="library" id="quickpicks">
+            <div id="h2">
+                <h1>Quick picks</h1>
+            </div>
+            <div class="picks">
+                <ul>
+
+                </ul>
+
+            </div>
+        </div>
+        <!-- seekbar -->
+
+    </div>
+    <div class="seekbar">
+        <div class="seektop">
+            <div class="buttons">
+                <i class="fa-solid fa-play "></i>
+            </div>
+            <h3 id= "songname"><p>Now playing</p>Empty Track</h3>
+            <div class="duration"><p>00:00</p>/<p>00:00</p></div>
+        </div>
+        <div class="seekline">
+            <div class="pointer"></div>
+        </div>
+    </div>
+    <div class="blur-element"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
