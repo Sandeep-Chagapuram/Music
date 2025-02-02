@@ -10,7 +10,8 @@ let duration = 0
 //getting all folders
 //stage - 1 
 async function getfolders() {
-    let response = await fetch("http://127.0.0.1:5500/songs/")
+    // let response = await fetch("http://127.0.0.1:5500/songs/")
+    let response = await fetch("/songs/")
     let text = await response.text()
     let divF = document.createElement("div")
     divF.innerHTML = text
@@ -37,7 +38,8 @@ function getfolder_name(folder) {
 //getting songs of one folder
 //stage-2
 async function getsongs(folder) {
-    let response = await fetch(`http://127.0.0.1:5500/songs/${folder}/`)
+    // let response = await fetch(`http://127.0.0.1:5500/songs/${folder}/`)
+    let response = await fetch(`/songs/${folder}/`)
     let text = await response.text()
     let divS = document.createElement("div")
     divS.innerHTML = text
@@ -53,7 +55,8 @@ async function getsongs(folder) {
 //getting all songs from all folders
 async function getAllsongs(folders) {
     for (const folder of folders) {
-        let response = await fetch(`http://127.0.0.1:5500/songs/${getfolder_name(folder)}/`)
+        // let response = await fetch(`http://127.0.0.1:5500/songs/${getfolder_name(folder)}/`)
+        let response = await fetch(`/songs/${getfolder_name(folder)}/`)
         let text = await response.text()
         let divS = document.createElement("div")
         divS.innerHTML = text
